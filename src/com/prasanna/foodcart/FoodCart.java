@@ -15,6 +15,8 @@ public class FoodCart extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//get the data from db(model)
+		String [] fooditems = {"briyani", "pizza"};
+		request.setAttribute("fooditems", fooditems);
 		
 		//redirect to a different page(view)
 		RequestDispatcher dispatcher=  request.getRequestDispatcher("Show-Food.jsp");
