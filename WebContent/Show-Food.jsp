@@ -9,9 +9,9 @@
 </head>
 <body>
 	<c:forEach var="items" items="${fooditems}">
-	
-		${items}
-		
+		${items.id}
+		${items.item}
+		${items.price}
 	</c:forEach>
 </body>
 </html>
